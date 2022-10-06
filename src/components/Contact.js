@@ -1,18 +1,24 @@
 import React from "react";
+import emailjs from '@emailjs/browser';
+import { environment } from "../environment.prod";
 
 export default function Contact() {
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    emailjs.sendForm('service_3lpxual', 'template_i2sq1pq', e.target, 'z2vSkpC7r_IW2-b-S')
+};
+
+
   return (
     <main id="main">
       {/* ======= Contact Section ======= */}
       <section id="contact" className="contact">
         <div className="container">
           <div className="section-title">
-            <h2>Contact</h2>
+            <h2>İletişim</h2>
             <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
+              Benimle işbirliği veya tüm sorularınız için iletişime geçebilirsiniz.
             </p>
           </div>
           <div className="row" data-aos="fade-in">
@@ -20,28 +26,28 @@ export default function Contact() {
               <div className="info">
                 <div className="address">
                   <i className="bi bi-geo-alt" />
-                  <h4>Location:</h4>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <h4>Konum:</h4>
+                  <p>Türkiye, İstanbul</p>
                 </div>
                 <div className="email">
                   <i className="bi bi-envelope" />
                   <h4>Email:</h4>
-                  <p>info@example.com</p>
+                  <p><a href={`mailto:${environment.email}`}>{environment.email}</a></p>
                 </div>
-                <div className="phone">
+                {/* <div className="phone">
                   <i className="bi bi-phone" />
                   <h4>Call:</h4>
                   <p>+1 5589 55488 55s</p>
-                </div>
+                </div> */}
               </div>
             </div>
             <div className="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-              <form
+              <form onSubmit={sendEmail}
                 className="php-email-form"
               >
                 <div className="row">
                   <div className="form-group col-md-6">
-                    <label htmlFor="name">Your Name</label>
+                    <label htmlFor="name">Ad Soyad</label>
                     <input
                       type="text"
                       name="name"
@@ -51,7 +57,7 @@ export default function Contact() {
                     />
                   </div>
                   <div className="form-group col-md-6">
-                    <label htmlFor="name">Your Email</label>
+                    <label htmlFor="name">Email</label>
                     <input
                       type="email"
                       className="form-control"
@@ -62,7 +68,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="form-group">
-                  <label htmlFor="name">Subject</label>
+                  <label htmlFor="name">Konu</label>
                   <input
                     type="text"
                     className="form-control"
@@ -72,7 +78,7 @@ export default function Contact() {
                   />
                 </div>
                 <div className="form-group">
-                  <label htmlFor="name">Message</label>
+                  <label htmlFor="name">Mesaj</label>
                   <textarea
                     className="form-control"
                     name="message"
@@ -89,7 +95,7 @@ export default function Contact() {
                   </div>
                 </div>
                 <div className="text-center">
-                  <button type="submit">Send Message</button>
+                  <button type="submit">Gönder</button>
                 </div>
               </form>
             </div>

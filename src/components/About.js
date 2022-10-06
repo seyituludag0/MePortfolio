@@ -8,8 +8,8 @@ export default function About() {
       <section id="about" className="about">
         <div className="container">
           <div className="section-title">
-            <h2>About</h2>
-            <p>{environment.aboutMeDescription1}</p>
+            <h2>Hakkımda</h2>
+            <p>{environment.biographyText}</p>
           </div>
           <div className="row">
             <div className="col-lg-4" data-aos="fade-right">
@@ -20,48 +20,41 @@ export default function About() {
               />
             </div>
             <div className="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-              <h3>UI/UX Designer &amp; Web Developer.</h3>
-              <p className="fst-italic">{environment.aboutMeDescription2}</p>
+              <h3>Full Stack Developer</h3>
+              <p className="fst-italic">
+                {environment.fullStackDescriptionText}
+              </p>
               <div className="row">
                 <div className="col-lg-6">
                   <ul>
                     <li>
-                      <i className="bi bi-chevron-right" />{" "}
-                      <strong>Birthday:</strong> <span>1 May 1995</span>
+                      <i className="bi bi-chevron-right" />
+                      <strong>Şehir:</strong> <span>Turkey, Istanbul</span>
                     </li>
                     <li>
-                      <i className="bi bi-chevron-right" />{" "}
-                      <strong>Website:</strong> <span>www.example.com</span>
+                      <i className="bi bi-chevron-right" />
+                      <strong>Yaş:</strong> <span>21</span>
                     </li>
                     <li>
-                      <i className="bi bi-chevron-right" />{" "}
-                      <strong>Phone:</strong> <span>+123 456 7890</span>
+                      <i className="bi bi-chevron-right" />
+                      <strong>Eğitim Durumu:</strong> <span>Lise</span>
                     </li>
                     <li>
-                      <i className="bi bi-chevron-right" />{" "}
-                      <strong>City:</strong> <span>New York, USA</span>
+                      <i className="bi bi-chevron-right" />
+                      <strong>E-mail:</strong>
+                      <span>
+                        <a
+                          href={`mailto:${environment.email}`}
+                          style={{ color: "black" }}
+                        >
+                          {environment.email}
+                        </a>
+                      </span>
                     </li>
-                  </ul>
-                </div>
-                <div className="col-lg-6">
-                  <ul>
-                    <li>
-                      <i className="bi bi-chevron-right" />{" "}
-                      <strong>Age:</strong> <span>30</span>
-                    </li>
-                    <li>
-                      <i className="bi bi-chevron-right" />{" "}
-                      <strong>Degree:</strong> <span>Master</span>
-                    </li>
-                    <li>
-                      <i className="bi bi-chevron-right" />{" "}
-                      <strong>PhEmailone:</strong>{" "}
-                      <span>email@example.com</span>
-                    </li>
-                    <li>
-                      <i className="bi bi-chevron-right" />{" "}
+                    {/* <li>
+                      <i className="bi bi-chevron-right" />
                       <strong>Freelance:</strong> <span>Available</span>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
@@ -72,8 +65,9 @@ export default function About() {
       </section>
       {/* About */}
 
+{/* ======= Facts Section ======= */}
       <div>
-        {/* ======= Facts Section ======= */}
+        
         {/* <section id="facts" className="facts">
           <div className="container">
             <div className="section-title">
@@ -160,114 +154,41 @@ export default function About() {
             </div>
           </div>
         </section> */}
-        {/* End Facts Section */}
       </div>
+{/* ======= End Facts Section ======= */}
 
       <div>
         {/* ======= Skills Section ======= */}
         <section id="skills" className="skills section-bg">
-          <div className="container">
-            <div className="section-title">
-              <h2>Skills</h2>
-              <p>
-                Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                Quia fugiat sit in iste officiis commodi quidem hic quas.
-              </p>
-            </div>
-            <div className="row skills-content">
-              <div className="col-lg-6" data-aos="fade-up">
-                <div className="progress">
-                  <span className="skill">
-                    HTML <i className="val">100%</i>
-                  </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow={100}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
-                  </div>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    CSS <i className="val">90%</i>
-                  </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow={90}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
-                  </div>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    JavaScript <i className="val">75%</i>
-                  </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow={75}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
-                  </div>
+        <div className="container">
+          <div className="section-title">
+            <h2>Yeteneklerim</h2>
+            {/* <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> */}
+          </div>
+          <div className="skills-content">
+            <div className="col-lg-10" data-aos="fade-up">
+              <div className="progress">
+                <span className="skill">C# <i className="val">85%</i></span>
+                <div className="progress-bar-wrap">
+                  <div className="progress-bar" role="progressbar" aria-valuenow={85} aria-valuemin={0} aria-valuemax={100} style={{width: '85%'}} />
                 </div>
               </div>
-              <div className="col-lg-6" data-aos="fade-up" data-aos-delay={100}>
-                <div className="progress">
-                  <span className="skill">
-                    PHP <i className="val">80%</i>
-                  </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow={80}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
-                  </div>
+              <div className="progress">
+                <span className="skill">Java <i className="val">70%</i></span>
+                <div className="progress-bar-wrap">
+                  <div className="progress-bar" role="progressbar" aria-valuenow={70} aria-valuemin={0} aria-valuemax={100} style={{width: '70%'}} />
                 </div>
-                <div className="progress">
-                  <span className="skill">
-                    WordPress/CMS <i className="val">90%</i>
-                  </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow={90}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
-                  </div>
-                </div>
-                <div className="progress">
-                  <span className="skill">
-                    Photoshop <i className="val">55%</i>
-                  </span>
-                  <div className="progress-bar-wrap">
-                    <div
-                      className="progress-bar"
-                      role="progressbar"
-                      aria-valuenow={55}
-                      aria-valuemin={0}
-                      aria-valuemax={100}
-                    />
-                  </div>
+              </div>
+              <div className="progress">
+                <span className="skill">React <i className="val">80%</i></span>
+                <div className="progress-bar-wrap">
+                  <div className="progress-bar" role="progressbar" aria-valuenow={80} aria-valuemin={0} aria-valuemax={100} style={{width: '80%'}} />
                 </div>
               </div>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
         {/* End Skills Section */}
       </div>
     </main>

@@ -11,11 +11,12 @@ export default function Home() {
         <div className="hero-container" data-aos="fade-in">
           <h1>{environment.name}</h1>
           <p>
-            I'm
-            <span
+            
+            <span className="typed"> Full Stack Junior Software Developer</span>
+            {/* <span
               className="typed"
               data-typed-items="Designer, Developer, Freelancer, Photographer"
-            />
+            /> */}
           </p>
         </div>
       </section>

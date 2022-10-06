@@ -7,25 +7,19 @@ export default function Services() {
       <section id="services" className="services">
         <div className="container">
           <div className="section-title">
-            <h2>Services</h2>
-            <p>
-              Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-              ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-              quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-              Quia fugiat sit in iste officiis commodi quidem hic quas.
-            </p>
+            <h2>Hizmetler</h2>
+            <p>Aşağıdaki hizmetlerden faydalanmak için benimle iletişime geçebilirsiniz.</p>
           </div>
           <div className="row">
             <div className="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
               <div className="icon">
-                <i className="bi bi-briefcase" />
+                <i className="bi bi-code" />
               </div>
               <h4 className="title">
-                <p>Lorem Ipsum</p>
+                <p>Backend Application</p>
               </h4>
               <p className="description">
-                Voluptatum deleniti atque corrupti quos dolores et quas
-                molestias excepturi sint occaecati cupiditate non provident
+                Backend Application'ınızı benim geliştirmemi isterseniz benimle iletişime geçebilirsiniz.
               </p>
             </div>
             <div
@@ -34,14 +28,13 @@ export default function Services() {
               data-aos-delay={100}
             >
               <div className="icon">
-                <i className="bi bi-card-checklist" />
+                <i className="fa fa-solid fa-database" />
               </div>
               <h4 className="title">
-                <p>Dolor Sitema</p>
+                <p>Database</p>
               </h4>
               <p className="description">
-                Minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                aliquip ex ea commodo consequat tarad limino ata
+                Database'inizi benim geliştirmemi isterseniz benimle iletişime geçebilirsiniz.
               </p>
             </div>
             <div
@@ -50,14 +43,13 @@ export default function Services() {
               data-aos-delay={200}
             >
               <div className="icon">
-                <i className="bi bi-bar-chart" />
+                <i className="bi bi-code-slash" />
               </div>
               <h4 className="title">
-                <p>Sed ut perspiciatis</p>
+                <p>Frontend Application</p>
               </h4>
               <p className="description">
-                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                cillum dolore eu fugiat nulla pariatur
+              Frontend'inizi benim geliştirmemi isterseniz benimle iletişime geçebilirsiniz.
               </p>
             </div>
             <div
@@ -66,46 +58,13 @@ export default function Services() {
               data-aos-delay={300}
             >
               <div className="icon">
-                <i className="bi bi-binoculars" />
+              <i className="bi bi-window" />
               </div>
               <h4 className="title">
-                <p>Magni Dolores</p>
+                <p>Web Site</p>
               </h4>
               <p className="description">
-                Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                qui officia deserunt mollit anim id est laborum
-              </p>
-            </div>
-            <div
-              className="col-lg-4 col-md-6 icon-box"
-              data-aos="fade-up"
-              data-aos-delay={400}
-            >
-              <div className="icon">
-                <i className="bi bi-brightness-high" />
-              </div>
-              <h4 className="title">
-                <p>Nemo Enim</p>
-              </h4>
-              <p className="description">
-                At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                blanditiis praesentium voluptatum deleniti atque
-              </p>
-            </div>
-            <div
-              className="col-lg-4 col-md-6 icon-box"
-              data-aos="fade-up"
-              data-aos-delay={500}
-            >
-              <div className="icon">
-                <i className="bi bi-calendar4-week" />
-              </div>
-              <h4 className="title">
-                <p>Eiusmod Tempor</p>
-              </h4>
-              <p className="description">
-                Et harum quidem rerum facilis est et expedita distinctio. Nam
-                libero tempore, cum soluta nobis est eligendi
+               Web sitenizin tamamını(backend, database ve frontend) benim geliştirmemi isterseniz benimle iletişime geçebilirsiniz.
               </p>
             </div>
           </div>
