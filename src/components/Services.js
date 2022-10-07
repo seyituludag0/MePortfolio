@@ -64,7 +64,7 @@ export default function Services() {
                 <p>Web Site</p>
               </h4>
               <p className="description">
-               Web sitenizin tamamını(backend, database ve frontend) benim geliştirmemi isterseniz benimle iletişime geçebilirsiniz.
+               Web sitenizin tamamını(backend, database ve frontend kısımlarını) benim geliştirmemi isterseniz benimle iletişime geçebilirsiniz.
               </p>
             </div>
           </div>

@@ -14,7 +14,7 @@ export default function About() {
           <div className="row">
             <div className="col-lg-4" data-aos="fade-right">
               <img
-                src="assets/img/profile-img.jpg"
+                src="assets/img/photo6.jpg"
                 className="img-fluid"
                 alt=""
               />

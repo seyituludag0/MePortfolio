@@ -7,7 +7,7 @@ export default function Sidebar() {
       <header id="header">
         <div className="d-flex flex-column">
           <div className="profile">
-            <img src="assets/img/profile-img.jpg" alt="" className="img-fluid rounded-circle" />
+            <img src="assets/img/photo3.jpg" alt="" className="img-fluid rounded-circle" />
             <h1 className="text-light"><a href="#hero">{environment.name}</a></h1>
             <div className="social-links mt-3 text-center">
               <a href={environment.instagramLink} target="_blank" rel="noreferrer" className="instagram"><i className="bx bxl-instagram" /></a>
