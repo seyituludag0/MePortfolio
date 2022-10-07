@@ -74,7 +74,7 @@ export default function Contact() {
             <h2>İletişim</h2>
             <p>
               Benimle işbirliği veya tüm sorularınız için iletişime
-              geçebilirsiniz.
+              geçebilirsiniz...............
             </p>
           </div>
           <div className="row" data-aos="fade-in">
