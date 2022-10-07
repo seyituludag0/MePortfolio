@@ -25,7 +25,7 @@ export default function Contact() {
     emailjs
       .sendForm(
         "service_3lpxual",
-        "template_i2sq1pq2",
+        "template_i2sq1pq",
         e.target,
         "z2vSkpC7r_IW2-b-S"
       )
